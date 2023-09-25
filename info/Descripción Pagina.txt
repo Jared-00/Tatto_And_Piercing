@@ -1,0 +1,5 @@
+Pagina web de Tattos y Piercings 
+
+Pagina web que sirve para encontrar lugares cercanos donde existen estudios para hacerte tatuajes y piercings con los
+artistas de tu preferencia asi como ver su informacion acerca de su estilo de tatuaje, el estudio, el arte que genera,
+los piercing que hace, las piezas de arete que tiene en venta, cotizaciones.
