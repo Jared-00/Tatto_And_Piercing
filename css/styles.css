@@ -96,6 +96,7 @@ h3 { font-size: 2.4rem; }
     background-color: #FFCE00;
     color: var(--blanco);
     font-size: 3rem;
+    border-style: inherit;
 }
 
 .navegacion__botones_:hover {
@@ -249,4 +250,8 @@ h3 { font-size: 2.4rem; }
 .formulario__sumbit:hover{
     cursor: pointer;
     background-color: var(--secundarioOscuro);
+}
+
+.pp{
+    color: #000;
 }
