@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Error 404 - Página no encontrada</title>
-    <meta name="Description" content="Pagina ERROR-404, dedicada para cuando se ejecute una accion y en 
+    <meta name="Description" content="Pagina ERROR-404 de Tatto and Piercing , dedicada para cuando se ejecute una accion y en 
     la pagina no se encuentre dicha informacion">
+    
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,7 +18,7 @@
             height: 100vh;
             margin: 0;
             padding: 0;
-            background: url(img/giphy_Error.gif) fixed;
+            background: url('img/giphy_Error.gif') no-repeat fixed center;
             background-size: cover;
             overflow: hidden;
         }
@@ -26,25 +27,63 @@
             text-align: center;
         }
         .error-text {
-            font-size: 48px;
+            font-size: 10vw; /* Tamaño del texto como 10% del ancho de la ventana */
             font-weight: bold;
             color: white;
+            margin-bottom: 20px; /* Espacio adicional entre los elementos */
         }
         .error-message {
-            font-size: 24px;
+            font-size: 5vw; /* Tamaño del texto como 5% del ancho de la ventana */
             color: white;
-            margin-top: 20px;
+            margin-bottom: 40px; /* Espacio adicional entre los elementos */
         }
         .back-button {
-            margin-top: 40px;
+            margin-top: 20px; /* Ajusta el margen superior */
+        }
+
+        /* Estilos para el enlace que se parecen a un botón */
+        .boton-enlace {
+            display: inline-block;
+            width: 30vw; /* Tamaño del botón como 30% del ancho de la ventana */
+            padding: 2vw; /* Relleno del botón en relación con el ancho de la ventana */
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+            background-color: #610B21;
+            color: white;
+            cursor: pointer;
+            font-size: 3vw; /* Tamaño del texto como 3% del ancho de la ventana */
+            margin-top: 1rem;
+            text-decoration: none;
+        }
+
+        /* Cambio de color al pasar el cursor sobre el enlace */
+        .boton-enlace:hover {
+            background-color: #610B4B;
+        }
+
+        /* Media query para dispositivos más pequeños */
+        @media (max-width: 768px) {
+            .error-text {
+                font-size: 12vw;
+            }
+            .error-message {
+                font-size: 7vw;
+            }
+            .boton-enlace {
+                width: 50vw;
+                padding: 3vw;
+                font-size: 5vw;
+            }
         }
     </style>
+
 </head>
 <body>
     <div class="container">
         <div class="error-text">Error 404</div>
         <div class="error-message">Página no encontrada</div>
-        <button class="back-button" onclick="goBack()">Volver</button>
+        <a href="index1.html" class="boton-enlace">Volver</a>
     </div>
 
   </body>

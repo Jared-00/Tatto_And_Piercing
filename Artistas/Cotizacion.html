@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cotizacion - Tatto And Piercing</title>
+
+    <link rel="stylesheet" href="../css/Normalize.css">
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        @media (min-width: 768px) {
+            .contenedor{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            column-gap: 2rem;
+             }
+            .texto{
+            text-align: justify;
+            margin-right: 5rem;
+            font-weight: bold;
+            }
+     }
+        
+        body {
+            font-family: Arial, sans-serif;
+        }
+        form {
+            width: 300px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+        input[type="text"], input[type="email"], input[type="tel"], textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        /* BLOQUES */
+        .contendor__compra{
+
+        }
+        .bloques{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        @media (min-width: 768px) {
+            .bloques{
+            grid-template-columns: repeat(3, 1fr);
+        }
+        }
+
+        .bloque{
+            text-align: center;
+        }
+        .bloque__titulo{
+            margin: 0;
+        }
+        .imagen-circulo {
+        border-radius: 50%; /* Hace que la imagen tenga bordes redondeados, formando un círculo */
+        width: 100px; /* Ajusta el ancho de la imagen al tamaño deseado */
+        height: 100px; /* Ajusta la altura de la imagen al tamaño deseado */
+        object-fit: cover; /* Ajusta el tamaño y recorta la imagen si es necesario */
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <header class="header">
+        <a href="../Index.html">
+            <img class="header__logo" src="../img/logo_tatto_.png" alt="Logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="../Index.html">Inicio</a>
+        <a class="navegacion__enlace" href="../Principal/Nosotros.html">Nosotros</a>
+    </nav>
+    
+    <div class="contenedor">
+        <div>
+            <form>
+                <label for="email">E-mail *</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="name">Nombre *</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="surname">Apellido</label>
+                <input type="text" id="surname" name="surname">
+                
+                <label for="whatsapp">WhatsApp**</label>
+                <input type="tel" id="whatsapp" name="whatsapp">
+                
+                <label for="image-link">Compártenos el link de tú imagen a tatuar</label>
+                <input type="text" id="image-link" name="image-link">
+                
+                <label for="tattoo-description">¿De qué se trata tu Tatuaje?</label>
+                <textarea id="tattoo-description" name="tattoo-description"></textarea>
+                
+                <input type="submit" value="SOLICITAR COTIZACIÓN">
+            </form>    
+        </div>
+
+        <div class="texto">
+            <p>
+                En Tatto And Piercing te damos la mejor recomendación para el diseño,
+                utilizamos la más alta técnica para que tu tatuaje quede perfecto y
+                te asesoramos durante el proceso de cicatrización para que el final
+                sea justo como lo esperabas.
+                <br>
+                <br>
+                Solo necesitamos unos datos:
+                <br>
+                1. Tú mail.
+                <br>
+                2. Tú nombre, seudónimo, o alter ego.
+                <br>
+                3. Tú cel, es para enviarte WhatsApp.
+                <br>
+                4. Si tienes alguna imagen, adjunta tu link, si aun no tienes un diseño, no te preocupes acá nos encargamos. 
+                <br>
+                <br>
+                Y por último ¿cuéntanos cómo quieres tu tatuaje?
+                <br>
+                Nos vemos en el Infierno !!!</p>
+        </div>
+    </div>
+
+    <h2 class="comprar__titulo">¿Porque tatuarte con nosotros?</h2>
+    
+    <section class="contenedor_comprar">    
+            <div class="bloques">
+                <div class="bloque">
+                    <img class="imagen-circulo" src="../img/7.jpg" alt="imagen de promocion para cotizar">
+                    <h3 class="boque__titutlo">LOS MEJORES ARTISTAS</h3>
+                    <p>Nos hemos asegurado de contar con artistas profesionales con amplia experiencia.</p>
+                </div><!-- .bloque-->
+                <div class="bloque">
+                    <img  class="imagen-circulo" src="../img/5.jpg" alt="imagen de promocion para cotizar">
+                    <h3 class="boque__titutlo">TRABAJOS DE CALIDAD</h3>
+                    <p>Puedes estar tranquilo de que te va a gustar tu tatuaje, sabemos que es de por vida.</p>
+                </div><!-- .bloque-->
+                <div class="bloque">
+                    <img class="imagen-circulo" src="../img/8.jpg" alt="imagen de promocion para cotizar">
+                    <h3 class="boque__titutlo">EQUIPO ESTERILIZADO</h3>
+                    <p>Para cada uno de los tatuajes se utiliza material completamente nuevo y altamente esterilizado.</p>
+                </div><!-- .bloque-->
+            </div><!-- .bloques-->
+    </section>
+   
+
+    <footer class="footer">
+        <p class="footer__texto">Tatto And Piercing - Todos los derechos Reservados 2023.</p>
+    </footer>
+    
+    
+</body>
+</html>
