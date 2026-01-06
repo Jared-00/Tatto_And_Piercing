@@ -1,6 +1,6 @@
 TattoAndPiercing
 
-Requerimientos de software:
+Herramientas utilizadas:
 
 * Editor de codigo: Visual Studio Code
 * Navegador web: Firefox developer Edition
